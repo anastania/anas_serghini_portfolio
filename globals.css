@@ -1,0 +1,86 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,500,400,700");
+
+:root {
+  --transition-speed: 0.3s;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  margin: 0px;
+  height: 100%;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Smooth transitions */
+.button,
+.text-wrapper,
+a {
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+/* Button hover effect */
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth section transitions */
+.section,
+.div-4,
+.div-20,
+.div-33 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.aos-animate,
+.div-4.aos-animate,
+.div-20.aos-animate,
+.div-33.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effects on interactive elements */
+.div-8:hover,
+.div-9:hover,
+.div-10:hover,
+.div-11:hover {
+  transform: translateY(-5px);
+  transition: transform var(--transition-speed) ease;
+}
+
+/* Optimize performance */
+.gravityteam-co {
+  will-change: transform;
+  backface-visibility: hidden;
+}

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERGHINI ANAS - Développeur Full-Stack</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="header">
+        <div class="header-bg"></div>
+        <nav class="nav">
+            <div class="logo">SERGHINI ANAS</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">À Propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#education" class="nav-link">Éducation</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle" class="theme-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-text">
+                    <h1 class="glitch" data-text="Développeur Web Full-Stack">Développeur Web Full-Stack</h1>
+                    <p class="subtitle">Passionné par le développement web et les solutions innovantes</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary">Me Contacter</a>
+                        <a href="#about" class="btn secondary">En Savoir Plus</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="about" class="about" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Profil Professionnel</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionné par le développement web, je cherche constamment de nouveaux défis en tant que développeur full-stack. J'aime donner vie à des concepts à travers des applications web simples et performantes. Ma maîtrise des technologies émergentes me permet de m'adapter rapidement à un environnement en évolution.</p>
+                    <p>Résoudre des problèmes complexes et trouver des solutions innovantes est une source de fierté. Je serais ravi de rejoindre une équipe dynamique pour partager ma passion et contribuer à des projets ambitieux.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Compétences Professionnelles</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="languages-section" data-aos="fade-up">
+                    <h3>Langues</h3>
+                    <div class="languages-grid">
+                        <div class="language-card">
+                            <div class="language-icon">🇲🇦</div>
+                            <span>Arabe</span>
+                            <div class="skill-level" data-level="95">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="language-card">
+                            <div class="language-icon">🇫🇷</div>
+                            <span>Français</span>
+                            <div class="skill-level" data-level="90">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="language-card">
+                            <div class="language-icon">🇬🇧</div>
+                            <span>Anglais</span>
+                            <div class="skill-level" data-level="75">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="tech-title" data-aos="fade-up">Technologies Maîtrisées</h3>
+                <div class="languages-grid tech-grid">
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <span>HTML5</span>
+                        <div class="skill-level" data-level="90">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <span>CSS3</span>
+                        <div class="skill-level" data-level="85">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <span>JavaScript</span>
+                        <div class="skill-level" data-level="80">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <span>PHP</span>
+                        <div class="skill-level" data-level="75">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                        <span>Laravel</span>
+                        <div class="skill-level" data-level="70">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <span>React</span>
+                        <div class="skill-level" data-level="65">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <span>Bootstrap</span>
+                        <div class="skill-level" data-level="85">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <span>Git</span>
+                        <div class="skill-level" data-level="75">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span>MySQL</span>
+                        <div class="skill-level" data-level="80">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <span>Figma</span>
+                        <div class="skill-level" data-level="70">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <span>Node.js</span>
+                        <div class="skill-level" data-level="65">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="language-card tech-card">
+                        <div class="language-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <span>Python</span>
+                        <div class="skill-level" data-level="60">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Éducation</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Aujourd'hui</div>
+                        <h3>Technicien Spécialisé en Développement web full-stack</h3>
+                        <p>Cités des Métiers et Compétences Rabat-Salé-Kénitra</p>
+                        <p class="location">Tamsna</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <h3>Baccalauréat en Science Vie et Terre</h3>
+                        <p>Khadija oum almouminin</p>
+                        <p class="location">Casablanca</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Mes Projets</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="hotel-project.jpg" alt="Hotel Management Website" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hotel Management Website</h3>
+                        <p>A comprehensive hotel management system with booking capabilities and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="todo-app.jpg" alt="Todo Application" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Todo Application</h3>
+                        <p>A modern todo application with task management and organization features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>CSS</span>
+                            <span>LocalStorage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="portfolio.jpg" alt="Portfolio Website" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio</h3>
+                        <p>A modern and responsive portfolio website showcasing my skills and projects.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <h1 class="contact-title">Contact Me</h1>
+                    <form class="contact-form" data-aos="fade-up">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nom</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Envoyer</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-card" data-aos="fade-right">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:anasserghini00@gmail.com">anasserghini00@gmail.com</a>
+                        </div>
+                        <div class="card-bg"></div>
+                    </div>
+
+                    <div class="contact-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/anas-serghini-85b7b0293/" target="_blank">Anas Serghini</a>
+                        </div>
+                        <div class="card-bg"></div>
+                    </div>
+
+                    <div class="contact-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/anastania" target="_blank">anastania</a>
+                        </div>
+                        <div class="card-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3 class="footer-logo">SERGHINI ANAS</h3>
+                <p class="footer-description">Développeur Full Stack passionné par la création d'expériences web innovantes et performantes.</p>
+                <div class="social-links">
+                    <a href="https://github.com/anastania" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anas-serghini-85b7b0293/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:anasserghini00@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#education">Éducation</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:anasserghini00@gmail.com">anasserghini00@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Casablanca, Maroc</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-line"></div>
+            <p class="copyright"> 2024 SERGHINI ANAS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursorFollower.style.left = e.clientX + 'px';
+            cursorFollower.style.top = e.clientY + 'px';
+        });
+
+        // Navigation background on scroll
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Theme Switch Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+            themeToggle.checked = savedTheme === 'dark-theme';
+        }
+
+        // Theme switch handler
+        themeToggle.addEventListener('change', () => {
+            if (themeToggle.checked) {
+                body.classList.add('dark-theme');
+                body.classList.remove('light-theme');
+                localStorage.setItem('theme', 'dark-theme');
+            } else {
+                body.classList.add('light-theme');
+                body.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light-theme');
+            }
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Animate skill progress bars
+        function animateSkills() {
+            const skillLevels = document.querySelectorAll('.skill-level');
+            skillLevels.forEach(skill => {
+                const level = skill.getAttribute('data-level');
+                const progress = skill.querySelector('.skill-progress');
+                progress.style.width = level + '%';
+            });
+        }
+
+        // Run animation when the skills section is in view
+        const skillsSection = document.querySelector('.skills-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateSkills();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(skillsSection);
+
+        // Add hover effect to interactive elements
+        const links = document.querySelectorAll('a, button, .skill-card, .project-card, .contact-card');
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-hover');
+                cursorFollower.classList.add('cursor-hover');
+            });
+
+            link.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-hover');
+                cursorFollower.classList.remove('cursor-hover');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize skill bars
+        const skillBars = document.querySelectorAll('.skill-item');
+        skillBars.forEach(skill => {
+            const progress = skill.querySelector('.skill-progress');
+            const level = skill.getAttribute('data-level');
+            progress.style.width = level + '%';
+        });
+    </script>
+</body>
+</html>
