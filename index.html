@@ -16,7 +16,12 @@
     <header class="header">
         <div class="header-bg"></div>
         <nav class="nav">
-            <div class="logo">SERGHINI ANAS</div>
+            <div class="nav-brand">SERGHINI ANAS</div>
+            <div class="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about" class="nav-link">À Propos</a></li>
                 <li><a href="#skills" class="nav-link">Compétences</a></li>
@@ -435,111 +440,11 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Custom cursor
-        const cursor = document.querySelector('.cursor');
-        const cursorFollower = document.querySelector('.cursor-follower');
-
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-            cursorFollower.style.left = e.clientX + 'px';
-            cursorFollower.style.top = e.clientY + 'px';
-        });
-
-        // Navigation background on scroll
-        const header = document.querySelector('.header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Theme Switch Logic
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            body.classList.add(savedTheme);
-            themeToggle.checked = savedTheme === 'dark-theme';
-        }
-
-        // Theme switch handler
-        themeToggle.addEventListener('change', () => {
-            if (themeToggle.checked) {
-                body.classList.add('dark-theme');
-                body.classList.remove('light-theme');
-                localStorage.setItem('theme', 'dark-theme');
-            } else {
-                body.classList.add('light-theme');
-                body.classList.remove('dark-theme');
-                localStorage.setItem('theme', 'light-theme');
-            }
-        });
-
-        // Initialize AOS
         AOS.init({
             duration: 1000,
             once: true
         });
-
-        // Animate skill progress bars
-        function animateSkills() {
-            const skillLevels = document.querySelectorAll('.skill-level');
-            skillLevels.forEach(skill => {
-                const level = skill.getAttribute('data-level');
-                const progress = skill.querySelector('.skill-progress');
-                progress.style.width = level + '%';
-            });
-        }
-
-        // Run animation when the skills section is in view
-        const skillsSection = document.querySelector('.skills-section');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateSkills();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        observer.observe(skillsSection);
-
-        // Add hover effect to interactive elements
-        const links = document.querySelectorAll('a, button, .skill-card, .project-card, .contact-card');
-        links.forEach(link => {
-            link.addEventListener('mouseenter', () => {
-                cursor.classList.add('cursor-hover');
-                cursorFollower.classList.add('cursor-hover');
-            });
-
-            link.addEventListener('mouseleave', () => {
-                cursor.classList.remove('cursor-hover');
-                cursorFollower.classList.remove('cursor-hover');
-            });
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Initialize skill bars
-        const skillBars = document.querySelectorAll('.skill-item');
-        skillBars.forEach(skill => {
-            const progress = skill.querySelector('.skill-progress');
-            const level = skill.getAttribute('data-level');
-            progress.style.width = level + '%';
-        });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
