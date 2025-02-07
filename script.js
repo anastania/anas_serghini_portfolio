@@ -1,5 +1,31 @@
 // Burger Menu Functionality
 document.addEventListener('DOMContentLoaded', () => {
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    const cursorFollower = document.querySelector('.cursor-follower');
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        cursorFollower.style.left = e.clientX + 'px';
+        cursorFollower.style.top = e.clientY + 'px';
+    });
+
+    // Add hover effect to interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, .skill-card, .project-card, .contact-card, .burger-menu');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursor.classList.add('cursor-hover');
+            cursorFollower.classList.add('cursor-hover');
+        });
+
+        el.addEventListener('mouseleave', () => {
+            cursor.classList.remove('cursor-hover');
+            cursorFollower.classList.remove('cursor-hover');
+        });
+    });
+
+    // Burger Menu Functionality
     const burgerMenu = document.querySelector('.burger-menu');
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelector('.nav-links');
@@ -30,6 +56,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Navigation background on scroll
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
     // Theme Switch Functionality
     const themeToggle = document.getElementById('theme-toggle');
     
@@ -47,4 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('dark-theme');
         themeToggle.checked = true;
     }
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });
