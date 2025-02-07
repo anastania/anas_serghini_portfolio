@@ -34,7 +34,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
 }
 
 html {
@@ -50,34 +49,9 @@ body {
     transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-/* Cursor Styles */
-.cursor {
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--accent-color);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    mix-blend-mode: difference;
-    transition: transform 0.2s ease;
-}
-
-.cursor-follower {
-    width: 8px;
-    height: 8px;
-    background: var(--accent-color);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    mix-blend-mode: difference;
-    transition: transform 0.15s ease;
-}
-
-.cursor-hover {
-    transform: scale(1.5);
-    background: var(--accent-color);
+/* Basic cursor styles */
+a, button, .project-card, .skill-card, .contact-card {
+    cursor: pointer;
 }
 
 /* Header & Navigation */
